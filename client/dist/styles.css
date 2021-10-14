@@ -1,0 +1,58 @@
+body{
+  background-image: linear-gradient(to right, rgb(38, 38, 38) , rgb(89, 89, 89));
+}
+.feed{
+  margin: auto;
+  width: 50%;
+  border: 2px solid rgb(102, 102, 102);
+}
+
+.feedLogo {
+  text-align: left;
+}
+
+.feedTeamName {
+  margin-left: 15px;
+  margin-right: 390px;
+}
+
+.suggestedTeams{
+  position: absolute;
+  right: 0px;
+  border: 2px solid rgb(102, 102, 102);
+  width: 170px;
+  height: auto;
+  margin-right: 50px;
+  text-align: center;
+}
+
+.suggestedTeamsItem{
+margin-top: 15px;
+margin-left: 4px;
+margin-right: 4px;
+margin-bottom: 10px;
+border: 2px solid rgb(102, 102, 102);
+}
+
+.suggestedAddTeamButton{
+  width:30px;
+  height:30px;
+  display:inline-block;
+
+  background:
+    linear-gradient(#000,#000) top left,
+    linear-gradient(#000,#000) top right,
+    linear-gradient(#000,#000) bottom left,
+    linear-gradient(#000,#000) bottom right;
+  background-size: calc(50% - 1px) calc(50% - 1px); /*thickness = 2px (2*1px) */
+  background-repeat:no-repeat;
+  border:10px solid #000; /*length = 30px (50px - 2x10px) */
+  box-sizing:border-box;
+}
+
+.checkmark {
+  font-family: arial;
+  -ms-transform: scaleX(-1) rotate(-35deg);
+  -webkit-transform: scaleX(-1) rotate(-35deg);
+  transform: scaleX(-1) rotate(-35deg);
+}

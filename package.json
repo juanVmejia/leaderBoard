@@ -1,0 +1,40 @@
+{
+  "name": "leaderboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "react-dev": "webpack --config ./webpack.config.js -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanVmejia/leaderBoard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanVmejia/leaderBoard/issues"
+  },
+  "homepage": "https://github.com/juanVmejia/leaderBoard#readme",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "bootstrap": "^5.1.1",
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.13",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.0.0-rc.0",
+    "react-dom": "^17.0.2",
+    "webpack": "^5.58.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "webpack-cli": "^4.9.0"
+  }
+}
