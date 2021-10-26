@@ -15,12 +15,21 @@ module.exports = {
   post: (req, res) => {
     models.teams.postTeam(req.body, (err, teams) => {
       if (err) {
-        console.log('QUERY FAIL', req.query)
         res.status(500).send(err.message)
       } else {
-        console.log('QUERY PASS', req.query)
+        res.status(200).send(teams)
+      }
+    })
+  },
+
+  getFollowedTeams: (req, res) => {
+    models.teams.followedTeams(req, (err, teams) => {
+      if (err) {
+        res.status(500).send(err)
+      } else {
         res.status(200).send(teams)
       }
     })
   }
+
 }

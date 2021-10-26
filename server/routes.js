@@ -7,4 +7,6 @@ router.get('/teams', controllers.teams.get)
 
 router.post('/favorites', controllers.teams.post)
 
+router.get('/followed', controllers.teams.getFollowedTeams)
+
 module.exports =router

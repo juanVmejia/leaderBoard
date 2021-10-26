@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS leaderBoardTracker;
+
 CREATE DATABASE leaderBoardTracker;
 
 use leaderBoardTracker;
@@ -8,8 +10,8 @@ CREATE TABLE teams (
   logo TEXT NOT NULL,
   follow BOOLEAN DEFAULT FALSE,
   team_id INT NOT NULL,
+  form VARCHAR(10) NOT NULL,
   PRIMARY KEY (id)
 )
 
- INSERT INTO teams (name, logo) VALUES ('Real Madrid', 'https://source.unsplash.com/user/c_v_r/100x100')
-  INSERT INTO teams (name, logo) VALUES ('Man City', 'https://source.unsplash.com/user/c_v_r/100x100')
+-- mysql -u root -p < server/db/schema.sql
